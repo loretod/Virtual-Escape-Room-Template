@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Escape the Escape Room</title>
+    
+    <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+      <link href="style.css" rel="stylesheet" type="text/css" />
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <div class="container">
+        <div class="row">
+          <!--Starter div with description-->
+          <div class="col s12" id="start">
+            <h1>Start Title</h1>
+            <p>back story goes here</p>
+            <button class="waves-effect btn" id="start_btn" onclick="startGame()">Start?</button>
+          </div>
+
+          <!--Puzzle 1 -->
+          <div class="col s12" id="puzzle_1">
+            <h1>Puzzle 1</h1>
+            <p>Description of room</p>
+            
+            <div class="card">
+              <div class="card-content">
+                <p>In the room, you find a key, a cipher, and a puzzle.</p>
+              </div>
+              <div class="card-tabs">
+                <ul class="tabs tabs-fixed-width">
+                  <li class="tab"><a href="#clue1">Clue 1</a></li>
+                  <li class="tab"><a href="#clue2">Clue 2</a></li>
+                  <li class="tab"><a href="#clue3">Clue 3</a></li>
+                </ul>
+              </div>
+    
+              <div class="card-content grey lighten-4">
+                <div id="clue1"><img src="img/key.jpeg"/></div>
+                <div id="clue2"><img src="img/math_puzzle.jpg"/></div>
+                <div id="clue3"><img src="img/morse_code.jpg"/></div>
+              </div>
+            </div>
+            <!--solve puzzle input modal -->
+            <div>
+              <button class="waves-effect btn" id="puzzle1_solve">Solve It</button>
+
+              <div id="puzzle1_solve_modal" class="modal">
+                <div class="modal-content">
+                  <p>What's your answer?</p>
+                  <form>
+                    <input type="text" id="puzzle1_answer_input">
+                  </form>
+                </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>

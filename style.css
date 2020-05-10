@@ -1,0 +1,14 @@
+body {
+  background-image: url("img/brooklyn_escape_outside.jpg");
+  height: 100vh;
+  width: 100vh;
+}
+
+#start{
+  background-color: white;
+}
+
+#puzzle_1{
+  background-color: mintcream;
+  display: none;
+}
